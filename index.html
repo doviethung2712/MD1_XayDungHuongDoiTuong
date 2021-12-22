@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xay Dung Lop Date</title>
+</head>
+<body>
+<script>
+    class myDate {
+        day;
+        month;
+        year;
+
+        constructor(day, month, year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
+
+        getDay() {
+            return this.day;
+        }
+
+        setDay(day) {
+            this.day = day;
+        }
+
+        getMonth() {
+            return this.month;
+        }
+
+        setMonth(month) {
+            this.month = month;
+        }
+
+        getYear() {
+            return this.year;
+        }
+
+        setYear(year) {
+            this.year = year;
+        }
+
+        toString() {
+            return 'Ahihi'
+        }
+    }
+
+    date = new myDate(27, 12, 2000);
+    let day = date.getDay();
+    let month = date.getMonth();
+    let year = date.getYear();
+
+    alert(day + '/' + month + "/" + year);
+
+    date.setDay(2);
+    date.setMonth(11);
+    date.setYear(2000);
+
+    day1 = date.getDay()
+    month1 = date.getMonth();
+    year1 = date.getYear();
+
+    alert(day1 + '/' + month1 + "/" + year1);
+    alert(date.toString())
+
+
+</script>
+</body>
+</html>
